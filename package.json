@@ -1,0 +1,35 @@
+{
+  "name": "atoz-api",
+  "version": "1.0.0",
+  "description": "Easily accessible API for anything within A-to-Z",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest",
+    "coverage" : "jest --coverage",
+    "test:watch" : "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ayxenx/AtoZ-API.git"
+  },
+  "keywords": [
+    "amazon",
+    "auto",
+    "vto",
+    "vet",
+    "atoz",
+    "api"
+  ],
+  "author": "Ayxenx",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ayxenx/AtoZ-API/issues"
+  },
+  "homepage": "https://github.com/Ayxenx/AtoZ-API#readme",
+  "dependencies": {
+    "jest": "^29.7.0"
+  }
+}
