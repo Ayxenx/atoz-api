@@ -175,7 +175,9 @@ main()
 ### FAQ
 
 >How to get my refresh_token?
-- To get your refresh token, log into a  
+- I will provide a BAT file so you're able to login with your
+username and password to recieve your refresh_token which
+will be completely stored on your system.  
 
 ## Todo
 **Each category will be in-order from importance**
