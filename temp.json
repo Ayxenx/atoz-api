@@ -1,0 +1,9 @@
+{
+    "operationName": "AcceptVto",
+    "variables": {
+        "input": {
+            "shiftOpportunityId": "af0d0e5d-5735-4c8b-9d8a-127fb52e94e7"
+        }
+    },
+    "query": "mutation AcceptVto($input: DropShiftInput!) {\n  dropShift(input: $input)\n}"
+}

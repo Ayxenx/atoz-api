@@ -29,7 +29,7 @@
     "url": "https://github.com/Ayxenx/AtoZ-API/issues"
   },
   "homepage": "https://github.com/Ayxenx/AtoZ-API#readme",
-  "dependencies": {
+  "devDependencies": {
     "jest": "^29.7.0"
   }
 }
