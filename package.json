@@ -1,6 +1,6 @@
 {
   "name": "atoz-api",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "Easily accessible API for anything within A-to-Z",
   "main": "main.js",
   "directories": {
