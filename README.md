@@ -2,7 +2,10 @@
 > Amazon A-to-Z API for automating employee services 
 
 ## Highlights
-- 
+- Simple A-to-Z API
+- NodeJS
+- Automation Support
+- Important Usage for VTO and VET
 
 ## Install
 ```bash
