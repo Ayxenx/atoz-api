@@ -1,4 +1,4 @@
-const getAuthToken = require('./lib/auth')
+const auth = require('./lib/auth')
 
 
 auth.getAuthToken()
