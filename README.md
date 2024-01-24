@@ -175,9 +175,11 @@ main()
 #### User
 > Here we can view the user information.
 ```javascript
+const atozapi = require('atoz-api')
+
 async function main() {
-    const authToken = await auth.getAuthToken('refresh_token')
-    const employeeId = await user.getEmployee('employeeId or alias', authToken.access_token)
+    const authToken = await atozapi.getAuthToken('refresh_token')
+    const employeeId = await atozapi.getEmployee('employeeId or alias', authToken.access_token)
 }
 
 main()
