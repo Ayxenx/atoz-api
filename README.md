@@ -36,7 +36,6 @@ async function main() {
  *  refresh your token
  * **/
 
-
 main();
 ```
 >Here, We're using a refresh token to get our auth token which is used in every request. This function will return JSON:
@@ -61,6 +60,7 @@ async function main(){
 const authToken = await atozapi.getAuthToken('refresh_token') // UUID as String
 console.log(await vto.getVto(authToken.access_token,false))
 }
+
 main()
 ```
 >This is what an opportunity looks like, you can automate accepting opportunities by going through every **opportunity** in **opportunities**
@@ -140,6 +140,7 @@ const response = vto.submitVto(authToken.access_token,opportunity.data.shiftOppo
  *  you'd like to accept, with this example this is attempting to accept the first opportunity
  * **/
 }
+
 main()
 ```
 
@@ -153,6 +154,7 @@ async function main(){
 const authToken = await atozapi.getAuthToken('refresh_token')
 const response = await atozapi.getVet(authToken.access_token,'01232024','01312024')
 }
+
 main()
 ```
 
@@ -167,10 +169,60 @@ const opportunity. = await atozapi.getVet(authToken.access_token,'01232024','013
 const response = await atozapi.submitVet(authToken,opportunity.data.shiftOpportunities.opportunities[0].id)
 // As of 1/23 this does not work right yet, but will very soon.
 }
-main()
 
+main()
+```
+#### User
+> Here we can view the user information.
+```javascript
+async function main() {
+    const authToken = await auth.getAuthToken('refresh_token')
+    const employeeId = await user.getEmployee('employeeId or alias', authToken.access_token)
+}
+
+main()
+```
+**user.getEmployee(employeeId/alias,auth)** will return something like this:
+
+```json
+{
+  "userId": "",
+  "employeeId": "",
+  "userFirstName": "",
+  "userLastName": "",
+  "country": "USA",
+  "jobLevel": "",
+  "badgeColor": "",
+  "businessTitle": "",
+  "defaultLanguageLocale": "",
+  "optinToUDate": 0,
+  "notifications": {},
+  "boardsViewer": [],
+  "boardsCommenter": [
+    {
+      "boardId": "",
+      "boardName": ""
+    }
+  ],
+  "boardsResponder": [],
+  "boardsAdmin": [],
+  "boardsSuperAdmin": [],
+  "boards": [
+    {
+      "boardId": "",
+      "boardName": ""
+    }
+  ],
+  "userDataUpdatedAt": 0000000000000,
+  "permissionsUpdatedAt": 0000000000000
+}
+```
+> View public profile
+```javascript
 
 ```
+#### Kudos
+> View earned and unearned badges
 
 ### FAQ
 
@@ -190,6 +242,7 @@ will be completely stored on your system.
     - [x] Submit VoluntaryTimeOff (VTO)
     - [x] Get VoluntaryExtraTime (VET)
     - [ ] Submit VoluntaryExtraTime (VET) 
+    - [x] View User Data
     - [ ] View Time
     - [ ] View Profile
 - Misc.
