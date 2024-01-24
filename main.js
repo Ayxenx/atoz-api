@@ -3,8 +3,6 @@ const vto = require("./lib/vto")
 const vet = require("./lib/vet")
 const user = require("./lib/user")
 
-
-
 module.exports = {
     getAuthToken: auth.getAuthToken,
     getVto: vto.getVto,
